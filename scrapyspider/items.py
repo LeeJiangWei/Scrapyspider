@@ -20,5 +20,11 @@ class DoubanMovieItem(scrapy.Item):
     score = scrapy.Field()
     score_num = scrapy.Field()
 
-class ArkWikiItem(scrapy.Item):
-    pass
+class ArkOperatorItem(scrapy.Item):
+    name_zh = scrapy.Field()
+    # name_en = scrapy.Field()
+    sex = scrapy.Field()
+    operator_class = scrapy.Field()
+    stars = scrapy.Field()
+    tags = scrapy.Field()
+    img_src = scrapy.Field()
