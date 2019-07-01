@@ -28,8 +28,13 @@ class DoubanSpider(Spider):
             ).extract()
             item['score_num'] = movie.xpath(
                 './/div[@class="star"]/span[4]/text()'
-            ).re(r'(\d+)人评价')
+            ).re(r'[0-9]+')
             yield item
+
+        next_url = response.xpath('//span[@class="next"]/a/@href').extract()
+        if next_url:
+            next_url = 'https://movie.douban.com/top250' + next_url[0]
+            yield Request(next_url, headers=self.headers)
 
 #启动爬虫命令：scrapy crawl douban
 #输出结果：scrapy crawl douban -o douban.csv
