@@ -19,7 +19,7 @@ FEED_EXPORT_ENCODING = 'gbk' # 我的电脑默认用gbk编码，有需要可设�
 #USER_AGENT = 'scrapyspider (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
