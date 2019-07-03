@@ -1,6 +1,6 @@
 from scrapy.spiders import Spider
 from scrapy import Request
-from  scrapyspider.items import ArkOperatorItem
+from scrapyspider.items import ArkOperatorItem
 
 
 class ArkWikiSpider(Spider):
