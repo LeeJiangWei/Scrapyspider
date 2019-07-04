@@ -13,7 +13,7 @@ BOT_NAME = 'scrapyspider'
 
 SPIDER_MODULES = ['scrapyspider.spiders']
 NEWSPIDER_MODULE = 'scrapyspider.spiders'
-FEED_EXPORT_ENCODING = 'gbk' # 我的电脑默认用gbk编码，有需要可设置为utf-8
+FEED_EXPORT_ENCODING = 'utf-8' # 我的电脑默认用gbk编码，有需要可设置为utf-8
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scrapyspider (+http://www.yourdomain.com)'
